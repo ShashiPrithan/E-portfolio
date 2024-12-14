@@ -241,13 +241,13 @@ High-Impact Blocks: Determine whether blocks have a high or unusual number of oc
 **Data Wrangling for City of Vancouver Block Numbers**
 
 **Project Description**
-The Data Wrangling for City of Vancouver Block Numbers Data project will clean, restructure, and combine block number utilizing AWS services. After being cleaned with *AWS Glue DataBrew and converted with **AWS Glue ETL, the data is ingested into *Amazon S3. To ensure high-quality data, duplicates, missing values, and inconsistencies are rectified. *Athena is used for validation, while **DynamoDB is used to store consolidated datasets for optimal querying. Security and monitoring are guaranteed by *CloudWatch, **CloudTrail, and **AWS KMS. In order to facilitate city planning, infrastructure management, and geospatial analysis, this project produces a solid, cohesive dataset.
+The Data Wrangling for City of Vancouver Block Numbers Data project will clean, restructure, and combine block number utilizing AWS services. After being cleaned with *AWS Glue DataBrew and converted with **AWS Glue ETL**, the data is ingested into **Amazon S3**. To ensure high-quality data, duplicates, missing values, and inconsistencies are rectified. **Athena** is used for validation, while **DynamoDB is used to store consolidated datasets for optimal querying. Security and monitoring are guaranteed by **CloudWatch**, **CloudTrail**, and **AWS KMS**. In order to facilitate city planning, infrastructure management, and geospatial analysis, this project produces a solid, cohesive dataset.
 
 **Project Title:**  
 Data Wrangling for Enhanced Analysis of City of Vancouver Block Numbers Data Using AWS Services
 
 **Project Objective**
-Performing thorough data wrangling on the City of Vancouver block numbers dataset in order to provide a clean, accurate, and unified dataset for analysis is the main goal of this project. Through the use of AWS services for data integration, transformation, and cleaning, the project seeks to provide trustworthy insights that assist **city planning, resource allocation, and infrastructure management. 
+Performing thorough data wrangling on the City of Vancouver block numbers dataset in order to provide a clean, accurate, and unified dataset for analysis is the main goal of this project. Through the use of AWS services for data integration, transformation, and cleaning, the project seeks to provide trustworthy insights that assist **city planning**, resource allocation, and infrastructure management. 
 
 **Project Background**
 The City of Vancouver's block numbers dataset is fragmented, inconsistent, and incomplete, including block numbers, timestamps, classifications, and geospatial coordinates. Improving the dataset's quality, consistency, and usefulness for additional research and reporting requires careful data wrangling. This procedure will guarantee that the data complies with analytical goals and city governance regulations, facilitating well-informed decision-making. 
@@ -262,7 +262,7 @@ The City of Vancouver's block numbers dataset is fragmented, inconsistent, and i
 **Methodology**
 
 **Data Collection**
-**AWS Service: Amazon S3 **
+**AWS Service: Amazon S3**
 Process: 
 Collect block numbers data from the source and upload it to the *pad-bn-raw-sha S3 bucket*. 
 To protect the data while it is being ingested, use AWS KMS to enable versioning and server-side encryption. 
@@ -299,7 +299,7 @@ Storage: Store the cleaned dataset for validation and further processing in the 
 
 
 **AWS Service:** 
-AWS Glue Data Transformation 
+**AWS Glue Data Transformation**
 
 **Process:**
 - Transform the cleansed dataset using AWS Glue ETL jobs. 
@@ -372,7 +372,7 @@ The project will result in a high-quality, consistent, and consolidated dataset 
 **Data Quality Control for City of Vancouver Block Numbers**
 
  **Project Description**
-The objective of this project is to use AWS services to create a thorough Data Quality Control (DQC) framework for the City of Vancouver block numbers dataset. In order to guarantee data accuracy, completeness, consistency, and dependability, the project will set up procedures for data profiling, cleansing, validation, monitoring, and reporting. Among the AWS tools that will help the project manage, validate, and monitor data quality are S3, **AWS Glue, **Athena, **CloudWatch, and **KMS. The end result will be reliable data integrity, easier city planning, and better operational decision-making for infrastructure and governance improvements. 
+The objective of this project is to use AWS services to create a thorough Data Quality Control (DQC) framework for the City of Vancouver block numbers dataset. In order to guarantee data accuracy, completeness, consistency, and dependability, the project will set up procedures for data profiling, cleansing, validation, monitoring, and reporting. Among the AWS tools that will help the project manage, validate, and monitor data quality are S3, **AWS Glue**, **Athena**, **CloudWatch**, and **KMS**. The end result will be reliable data integrity, easier city planning, and better operational decision-making for infrastructure and governance improvements. 
 
 **Project Title:**
 Data Quality Control for City of Vancouver Block Numbers Using AWS Services  
@@ -755,7 +755,7 @@ Enable *IAM-controlled access* and use *AWS KMS encryption* for security.
 - Missing values. 
 - Compliance rates with the format. 
 
-***Phase VII Training and Awareness (Week 8)* **
+**Phase VII Training and Awareness (Week 8)**
 Create training sessions for HR departments to: - Explain the principles of data quality. 
 - Display AWS tools and workflows. 
 - Provide rules for reliable data entry. 
@@ -770,7 +770,7 @@ Create training sessions for HR departments to: - Explain the principles of data
 *AWS CloudTrail*: For recording API activities. 
 *IAM & KMS*: For encryption and safe access. 
 
-***Deliverables*:**
+***Deliverables:**
 
 1. *Cleaned Dataset*:  
    - Stored in S3 and DynamoDB for structured access.  
@@ -790,21 +790,21 @@ Create training sessions for HR departments to: - Explain the principles of data
 **Timeline:**
 The recruiting dataset at *University Canada West* will undergo a structured implementation of the *Data Quality Control (DQC)* project over *eight weeks* to guarantee thorough improvements in data quality. 
 
-*In Week 1, the recruitment dataset will be transferred to **Amazon S3** for centralized storage. Secure access will be set up with *IAM roles*, and versioning will be enabled to track changes for future auditing.
+**In Week 1**, the recruitment dataset will be transferred to **Amazon S3** for centralized storage. Secure access will be set up with *IAM roles*, and versioning will be enabled to track changes for future auditing.
 
 
-*Week 2* focuses on *data profiling* with *AWS Glue Crawler* and *DataBrew* to analyze completeness, identify missing values, find duplicates, and highlight inconsistencies in areas such as Candidate ID, Referral Reward, and Application Date. 
+**Week 2** focuses on *data profiling* with *AWS Glue Crawler* and *DataBrew* to analyze completeness, identify missing values, find duplicates, and highlight inconsistencies in areas such as Candidate ID, Referral Reward, and Application Date. 
 
-**Glue DataBrew** will be used to clean data during *Weeks 3 and 4. Duplicate entries will be eliminated, missing values will be replaced with defaults, and formats that are inconsistent, such as dates, will be standardized. After cleaning, S3 will be used to store the dataset. 
+**Glue DataBrew** will be used to clean data during **Weeks 3 and 4**. Duplicate entries will be eliminated, missing values will be replaced with defaults, and formats that are inconsistent, such as dates, will be standardized. After cleaning, S3 will be used to store the dataset. 
 
-In *Week 5, **Glue* and *Athena* will be used to construct validation rules. These guidelines verify that there are no duplicate Candidate IDs, check that numerical ranges are correct, and verify that the Application Type complies with authorized categories.
+In **Week 5**, *Glue* and *Athena* will be used to construct validation rules. These guidelines verify that there are no duplicate Candidate IDs, check that numerical ranges are correct, and verify that the Application Type complies with authorized categories.
 
 
-In *Week 6*, the emphasis is on *data enrichment* through the use of *DynamoDB* for structured searches and the implementation of security protocols like *KMS encryption* and IAM controls. 
+In **Week 6***, the emphasis is on *data enrichment* through the use of *DynamoDB* for structured searches and the implementation of security protocols like *KMS encryption* and IAM controls. 
 
-During *Week 7,**CloudWatch* and *CloudTrail* will be utilized to log operations, monitor data pipeline performance, and display quality trends via dashboards. 
+During **Week 7**,**CloudWatch** and **CloudTrail** will be utilized to log operations, monitor data pipeline performance, and display quality trends via dashboards. 
 
-Finally, HR staff will participate in workshops and training sessions during *Week 8*, which will concentrate on uniform data input processes, AWS tools, and best practices for data quality.
+Finally, HR staff will participate in workshops and training sessions during **Week 8**, which will concentrate on uniform data input processes, AWS tools, and best practices for data quality.
 
 
 
